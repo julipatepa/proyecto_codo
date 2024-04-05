@@ -1,0 +1,194 @@
+* {
+    
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    margin-bottom: 0%;
+    
+    
+    
+    
+}
+
+
+.chat-whatsapp {
+    position: fixed;
+    bottom: 0; 
+    right: 0px; 
+    z-index: 9999;
+}
+
+.chat-whatsapp button {
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    
+    
+}
+
+.chat-whatsapp button:hover {
+    background-color: #128c7e;
+}
+#header{
+   
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: space-evenly;
+    z-index: 999;
+    width: 100%;
+    
+    
+    
+
+    
+   
+    
+}
+
+.nav {
+    
+    box-sizing: content-box;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    z-index: 999;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: space-evenly;
+    position: relative;
+        
+        
+       
+  
+    
+    
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+    z-index: 999;
+    padding: 15px 20px;
+    display: flex;
+    
+    
+}
+
+
+
+
+.nav li ul a:hover{
+    align-items: space-evenly;
+    background-color: red;
+}
+.nav li ul {
+    display: none;
+    position: fixed;
+    z-index: 999; 
+    background-color: #0a0a0a;
+    
+}
+.nav li:hover > ul{
+    display: block;
+}
+.contenedor-imagen h1 {
+    position:absolute;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-left: 50%;
+    margin-right: 50%;
+    padding: 10px;
+    z-index: 99999;
+    color: aliceblue;
+    text-align: center;
+    width: 70%;
+    height:15vw;
+    box-sizing: content-box;
+    overflow-y: hidden;
+
+    
+   
+}
+
+
+.contenedor-imagen {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    top: 0;
+    background-size: cover;
+}
+
+
+.imagen1{
+    
+    width: 100%;
+    opacity: 0.5;
+}
+.logo{
+    border-radius: 100%;
+    width: 50px;
+    flex-direction: initial;
+    
+    
+
+}
+ 
+
+body{ 
+    background-color: black;
+    z-index: 1;
+    overflow-y: auto;
+    
+    
+
+}
+@media screen and (max-width: 999px) {
+    body {
+      font-size: 12px; /* Reducir el tamaño de fuente en pantallas pequeñas */
+       
+    }
+  }
+.nav .navegador{
+    margin-right: 100px;
+    
+    
+    
+}
+
+.animate__animated.animate__headShake{
+    --animate-duration: 2s;
+    
+}
+.caca{
+    --animate-duration: 2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
