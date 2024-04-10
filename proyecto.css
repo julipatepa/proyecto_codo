@@ -43,12 +43,6 @@
     z-index: 999;
     width: 100%;
     
-    
-    
-
-    
-   
-    
 }
 
 .nav {
@@ -69,13 +63,7 @@
     align-items: space-evenly;
     position: relative;
         
-        
-       
-  
-    
-    
 }
-
 .nav a{
     text-decoration: none;
     color: white;
@@ -86,9 +74,6 @@
     
     
 }
-
-
-
 
 .nav li ul a:hover{
     align-items: space-evenly;
@@ -106,11 +91,6 @@
 }
 .contenedor-imagen h1 {
     position:absolute;
-    margin-top: 50%;
-    margin-bottom: 50%;
-    margin-left: 50%;
-    margin-right: 50%;
-    padding: 10px;
     z-index: 99999;
     color: aliceblue;
     text-align: center;
@@ -125,19 +105,19 @@
 
 
 .contenedor-imagen {
-    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    
     width: 100%;
     top: 0;
     background-size: cover;
 }
 
-
+h1{
+    overflow-x:hidden ;
+}
 .imagen1{
-    
+    position: ;
     width: 100%;
     opacity: 0.5;
 }
@@ -159,13 +139,14 @@ body{
     
 
 }
-@media screen and (max-width: 999px) {
-    body {
-      font-size: 12px; /* Reducir el tamaño de fuente en pantallas pequeñas */
-       
+
+  @media screen and (max-width: 999px) {
+    h1{
+       font-size: 16px; 
     }
-  }
-.nav .navegador{
+
+}
+  .nav .navegador{
     margin-right: 100px;
     
     
@@ -176,8 +157,24 @@ body{
     --animate-duration: 2s;
     
 }
-.caca{
-    --animate-duration: 2s;
+.container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    align-self: flex-end;
+    height: 100%;
+
+    
+    
+
+}
+.img{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
 }
 
 
