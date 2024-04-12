@@ -5,50 +5,51 @@
 }
 
 .chat-whatsapp {
-  position: fixed;
-  bottom: 0;
-  right: 0px;
+  position: relative;
   z-index: 9999;
 }
 
-.chat-whatsapp button {
-  background-color: #25d366;
+.boton_wsp {
+  width: 100px;
+  height: 50px;
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  display: flex;
   cursor: pointer;
   font-weight: bold;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.img_wsp {
+  width: 100px;
+}
+.letras_boton {
+  text-decoration: none;
+  background-color: rgba(3, 75, 9, 0.849);
+  color: black;
 }
 
 .chat-whatsapp button:hover {
-  background-color: #128c7e;
-}
-#header {
-  position: relative;
-  font-family: Arial, Helvetica, sans-serif;
-  justify-content: space-between;
-  z-index: 999;
-  width: 100%;
-  overflow-y: hidden;
-  top: 0;
-  display: inline;
+  background-color: #080808;
 }
 
 .nav {
-  box-sizing: content-box;
   background-color: black;
   width: 100%;
   z-index: 999;
   opacity: 0.8;
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: nowrap;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-evenly;
+  top: 0;
 }
+
 .nav a {
   text-decoration: none;
   color: white;
@@ -56,37 +57,42 @@
   z-index: 999;
   padding: 15px 20px;
   display: flex;
+  padding-left: 0;
+  margin-left: 0px;
+}
+.menu {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  background-color: #030303;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .nav li ul a:hover {
   align-items: space-evenly;
   background-color: red;
 }
-.nav li ul {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  background-color: #0a0a0a;
-}
+
 .nav li:hover > ul {
   display: block;
 }
 
-h1 {
-  overflow-x: hidden;
-}
 .logo {
   display: flex;
   border-radius: 100%;
   width: 50px;
-  justify-content: flex-start;
-  margin: 0%;
+  height: 50px;
+  justify-items: flex-start;
 }
 
 .bodi {
   background-color: rgba(155, 135, 226, 0.637);
   z-index: 1;
   overflow-y: auto;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center center;
 }
 
 .animate__animated.animate__headShake {
@@ -95,12 +101,10 @@ h1 {
 .carrusel {
   display: flex;
   max-height: 400px;
-  margin-top: 30px;
-  margin-bottom: 20px;
   border-top: solid;
   border-bottom: solid;
-  align-items: center; /* Centra verticalmente el contenido */
-  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center;
+  justify-content: center;
 }
 
 .imagen {
@@ -110,9 +114,189 @@ h1 {
   margin: 0px;
   padding: 0px;
 }
-@media screen and (max-width: 999px) {
+
+.button {
+  margin: 0%;
+  padding: 0%;
+}
+@media screen and (max-width: 600px) {
+  /* Estilos específicos para pantallas pequeñas */
   .bodi {
     font-size: 14px;
+    width: 80%;
+    margin: 5px auto;
+    justify-content: center;
+  }
+  .carrusel {
+    border-left: solid;
+    border-right: solid;
+    border-radius: 1%;
+  }
+  .imagen {
+    border-radius: 1%;
+  }
+  .nav {
+    border-radius: 1%;
+  }
+}
+/* Media query para pantallas medianas (entre 601px y 1024px de ancho) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos específicos para pantallas medianas */
+  .bodi {
+    font-size: 18px;
+    width: 90%;
+    justify-content: center;
+    margin: 5px auto;
+  }
+  .carrusel {
+    border-left: solid;
+    border-right: solid;
+    border-radius: 1%;
+  }
+  .imagen {
+    border-radius: 1%;
+  }
+  .nav {
+    border-radius: 1%;
+  }
+}
+
+/* Media query para pantallas grandes (más de 1024px de ancho) */
+@media screen and (min-width: 1025px) {
+  /* Estilos específicos para pantallas grandes */
+  .bodi {
+    font-size: 20px;
+    width: 100%;
+    align-items: center;
+    margin: 5px auto;
+  }
+}
+* footer {
+  background-color: rgb(48, 48, 77);
+  color: beige;
+  box-shadow: 2px;
+  border-radius: 8px;
+  padding: 20 px;
+  border: solid blue;
+  border-top: none;
+  position: relative;
+}
+h4 {
+  border: solid blue;
+}
+a {
+  color: beige; /* Esto cambiará el color del enlace a rojo */
+}
+button {
+  width: 200px;
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos específicos para pantallas medianas */
+  .container {
+    font-size: 18px;
+    width: 90%;
+    justify-content: center;
+    margin: 5px auto;
+  }
+}
+/* Media query para pantallas grandes (más de 1024px de ancho) */
+@media screen and (min-width: 1025px) {
+  .container {
+    font-size: 20px;
+    width: 100%;
+    align-items: center;
+    margin: 5px auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* Estilos específicos para pantallas pequeñas */
+  .container {
+    font-size: 14px;
+    width: 80%;
+    margin: 5px auto;
+    justify-content: center;
+  }
+}
+.container {
+  background-color: beige;
+}
+body {
+  background-color: #030303;
+}
+.letras {
+  color: blue;
+  text-decoration: none;
+}
+.mapa_sitio {
+  border: solid blue;
+}
+.nuestro_cursos {
+  border: solid blue;
+}
+.logo_footer {
+  border-radius: 100%;
+}
+.pie {
+  border: solid blue;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos específicos para pantallas medianas */
+  .logo_footer {
+    font-size: 18px;
+    width: 90px;
+    justify-content: center;
+    margin: 5px auto;
+  }
+}
+/* Media query para pantallas grandes (más de 1024px de ancho) */
+@media screen and (min-width: 1025px) {
+  .logo_footer {
+    font-size: 20px;
+    width: 100px;
+    align-items: center;
+    margin: 5px auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* Estilos específicos para pantallas pequeñas */
+  .logo_footer {
+    font-size: 14px;
+    width: 30px;
+    margin: 5px auto;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* Estilos específicos para pantallas pequeñas */
+  .chat-whatsapp {
+    font-size: 14px;
+    width: 80%;
+    opacity: 0.4;
+    justify-content: center;
+    position: absolute;
+  }
+}
+/* Media query para pantallas grandes (más de 1024px de ancho) */
+@media screen and (min-width: 1025px) {
+  .chat-whatsapp {
+    font-size: 20px;
+    width: 100%;
+    justify-content: center;
+
+    position: absolute;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Estilos específicos para pantallas medianas */
+  .chat-whatsapp {
+    font-size: 18px;
+    width: 90%;
+    justify-content: center;
+
+    position: absolute;
   }
 }
 
