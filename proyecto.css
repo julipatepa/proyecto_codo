@@ -171,6 +171,15 @@
     margin: 5px auto;
   }
 }
+
+<!--AGREGO ESTO PARA WUE VAYA UNA IMAGEN DE FONDO EN LA SECCION DE KOSOTROS.
+LUEGO DESDE LA COMPU BUSCO LA FOTO DE FONDO. MAJO. -->
+
+section {
+      background-image: url("imagenes/mi-imagen-de-fondo.jpg");
+      }
+      
+} <!--este cierre no se de donde saluo .. fijate no vataa ser q yo hasta hecho cagada -->
 * footer {
   background-color: rgb(48, 48, 77);
   color: beige;
