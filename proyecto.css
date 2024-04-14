@@ -4,50 +4,36 @@
   padding: 0;
 }
 
-.chat-whatsapp {
-  position: relative;
-  z-index: 9999;
-}
-
-.boton_wsp {
-  width: 100px;
-  height: 50px;
-  color: #fff;
-  border: none;
-  display: flex;
-  cursor: pointer;
-  font-weight: bold;
-  justify-content: space-between;
-  text-decoration: none;
-}
-.img_wsp {
-  width: 100px;
-}
-.letras_boton {
-  text-decoration: none;
-  background-color: rgba(3, 75, 9, 0.849);
-  color: black;
-}
-
-.chat-whatsapp button:hover {
-  background-color: #080808;
-}
-
 .nav {
   background-color: black;
   width: 100%;
   z-index: 999;
-  opacity: 0.8;
-  display: flex;
+  
+  display:flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: initial ;
+  flex-wrap: wrap;
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
-  justify-content: space-evenly;
-  top: 0;
+  justify-content:space-between;
+  border-bottom: none;
+  border-top: solid blue;
+  border-left: solid blue;
+  border-right: solid blue;
+  background-image: url(fondo2.jpg);
+  
+}
+li a{
+  color: tomato;
+}
+.footer h4{
+  color: tomato;
+  
+}
+.footer p{
+  color: tomato;
 }
 
 .nav a {
@@ -57,8 +43,14 @@
   z-index: 999;
   padding: 15px 20px;
   display: flex;
-  padding-left: 0;
   margin-left: 0px;
+  
+}
+
+.imagen_wsp{
+  border-radius: 100%;
+  display: flex;
+  align-items:start;
 }
 .menu {
   display: none;
@@ -87,12 +79,13 @@
 }
 
 .bodi {
-  background-color: rgba(155, 135, 226, 0.637);
+  background-color: rgb(12, 12, 12);
   z-index: 1;
   overflow-y: auto;
-  min-height: 100vh;
+  margin-top: 0;
+  padding: 0;
   justify-content: center;
-  align-items: center center;
+  align-items:center;
 }
 
 .animate__animated.animate__headShake {
@@ -101,8 +94,9 @@
 .carrusel {
   display: flex;
   max-height: 400px;
-  border-top: solid;
-  border-bottom: solid;
+  border-top: solid blue;
+  border-bottom: solid blue;
+  
   align-items: center;
   justify-content: center;
 }
@@ -119,8 +113,9 @@
   margin: 0%;
   padding: 0%;
 }
+/*pantallas pequeñas hasta 600px */
 @media screen and (max-width: 600px) {
-  /* Estilos específicos para pantallas pequeñas */
+ 
   .bodi {
     font-size: 14px;
     width: 80%;
@@ -128,8 +123,8 @@
     justify-content: center;
   }
   .carrusel {
-    border-left: solid;
-    border-right: solid;
+    border-left: solid blue;
+    border-right: solid blue;
     border-radius: 1%;
   }
   .imagen {
@@ -139,9 +134,8 @@
     border-radius: 1%;
   }
 }
-/* Media query para pantallas medianas (entre 601px y 1024px de ancho) */
+/* pantallas medianas (entre 601px y 1024px de ancho) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Estilos específicos para pantallas medianas */
   .bodi {
     font-size: 18px;
     width: 90%;
@@ -149,8 +143,8 @@
     margin: 5px auto;
   }
   .carrusel {
-    border-left: solid;
-    border-right: solid;
+    border-left: solid blue;
+    border-right: solid blue;
     border-radius: 1%;
   }
   .imagen {
@@ -161,46 +155,50 @@
   }
 }
 
-/* Media query para pantallas grandes (más de 1024px de ancho) */
+/*  pantallas grandes (más de 1024px de ancho) */
 @media screen and (min-width: 1025px) {
-  /* Estilos específicos para pantallas grandes */
+ 
   .bodi {
-    font-size: 20px;
+    font-size: 16px;
     width: 100%;
     align-items: center;
     margin: 5px auto;
   }
 }
-
-<!--AGREGO ESTO PARA WUE VAYA UNA IMAGEN DE FONDO EN LA SECCION DE KOSOTROS.
-LUEGO DESDE LA COMPU BUSCO LA FOTO DE FONDO. MAJO. -->
-
-section {
-      background-image: url("imagenes/mi-imagen-de-fondo.jpg");
-      }
-      
-} <!--este cierre no se de donde saluo .. fijate no vataa ser q yo hasta hecho cagada -->
 * footer {
-  background-color: rgb(48, 48, 77);
+  background-color: rgb(150, 150, 231);
   color: beige;
   box-shadow: 2px;
-  border-radius: 8px;
   padding: 20 px;
   border: solid blue;
   border-top: none;
-  position: relative;
+  position: absolute;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-image: url(fondo2.jpg);
+  
 }
 h4 {
   border: solid blue;
+  border-left: none;
+  border-right: none;
+ 
+  
+  
+  
+ 
 }
-a {
-  color: beige; /* Esto cambiará el color del enlace a rojo */
+p{
+  /*color: tomato;*/
 }
+
 button {
   width: 200px;
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Estilos específicos para pantallas medianas */
+  /*  para pantallas medianas */
   .container {
     font-size: 18px;
     width: 90%;
@@ -208,7 +206,7 @@ button {
     margin: 5px auto;
   }
 }
-/* Media query para pantallas grandes (más de 1024px de ancho) */
+/* pantallas grandes (más de 1024px de ancho) */
 @media screen and (min-width: 1025px) {
   .container {
     font-size: 20px;
@@ -218,7 +216,7 @@ button {
   }
 }
 @media screen and (max-width: 600px) {
-  /* Estilos específicos para pantallas pequeñas */
+  /* para pantallas pequeñas */
   .container {
     font-size: 14px;
     width: 80%;
@@ -226,21 +224,25 @@ button {
     justify-content: center;
   }
 }
-.container {
-  background-color: beige;
-}
+
 body {
   background-color: #030303;
 }
 .letras {
   color: blue;
   text-decoration: none;
+  border-left: none;
+  border-right: none;
 }
 .mapa_sitio {
   border: solid blue;
+  border-left: none;
+  border-right: none;
 }
 .nuestro_cursos {
   border: solid blue;
+  border-left: none;
+  border-right: none;
 }
 .logo_footer {
   border-radius: 100%;
@@ -251,62 +253,95 @@ body {
   border-left: none;
   border-right: none;
 }
+
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Estilos específicos para pantallas medianas */
-  .logo_footer {
-    font-size: 18px;
-    width: 90px;
-    justify-content: center;
-    margin: 5px auto;
-  }
-}
-/* Media query para pantallas grandes (más de 1024px de ancho) */
-@media screen and (min-width: 1025px) {
-  .logo_footer {
-    font-size: 20px;
-    width: 100px;
-    align-items: center;
-    margin: 5px auto;
-  }
-}
-@media screen and (max-width: 600px) {
-  /* Estilos específicos para pantallas pequeñas */
-  .logo_footer {
+  /* para pantallas medianas */
+ 
+  .imagen_wsp2 {
     font-size: 14px;
     width: 30px;
-    margin: 5px auto;
-    justify-content: center;
+    
+    justify-content: space-between;
+  }
+}
+/* pantallas grandes (más de 1024px de ancho) */
+@media screen and (min-width: 1025px) {
+  
+  .imagen_wsp2 {
+    font-size: 14px;
+    width: 30px;
+   
+    justify-content: space-between;
   }
 }
 @media screen and (max-width: 600px) {
-  /* Estilos específicos para pantallas pequeñas */
-  .chat-whatsapp {
+  /*  para pantallas pequeñas */
+  
+  .imagen_wsp2 {
     font-size: 14px;
-    width: 80%;
-    opacity: 0.4;
-    justify-content: center;
-    position: absolute;
+    width: 30px;
+    
+    justify-content: space-between;
   }
 }
-/* Media query para pantallas grandes (más de 1024px de ancho) */
-@media screen and (min-width: 1025px) {
-  .chat-whatsapp {
-    font-size: 20px;
-    width: 100%;
-    justify-content: center;
+.imagen_wsp{
+  justify-content:space-between;
+  margin: 0;
+  padding: 0;
+  border-radius: 100%;
+  width: 5px;
 
+}
+.imagen_wsp2{
+  justify-content: space-between;
+ 
+  
+}
+@media screen and (max-width: 600px) {
+  /* para pantallas pequeñas */
+  .footer {
+    font-size: 14px;
+    width: 80%;
+    justify-content: space-between;
+
+  }
+}
+/*  pantallas grandes (más de 1024px de ancho) */
+@media screen and (min-width: 1025px) {
+  .footer {
+    font-size: 18px;
+    width: 100%;
+    justify-content: start;
     position: absolute;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-  /* Estilos específicos para pantallas medianas */
-  .chat-whatsapp {
-    font-size: 18px;
+  /*  para pantallas medianas */
+  .footer {
+    font-size: 16px;
     width: 90%;
-    justify-content: center;
-
+    justify-content: start;
     position: absolute;
   }
+}
+body{
+  background-image: url(fondo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+span{
+color: white;
+
+}
+label{
+  color: white;
+}
+.letras{
+  color: red;
+}
+h2{
+  color: white;
+}
 }
 
 
