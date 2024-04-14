@@ -9,16 +9,20 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="proyecto.js">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="proyecto.js"></script>
     <title>title</title>
 </head>
 
 <body class="bodi">
-
-    <ul class="nav">
-        <img src="logo_proy.jpeg" alt="Logo" class="logo">
-
+    
+    <ul  class="nav">
+        <div class="row">
+        <button onclick="enviarMensajeWhatsApp()"  type="button" class="btn btn-link p-3   imagen_wsp">
+        <img class="rounded-5  imagen_wsp2"   src="wsp.png" alt="imagen_wsp"></button>
+        </div>
+        
+        <img src="logo_proy.jpeg" alt="Logo" class="logo">     
         <a href="" class="button">inicio</a>
         <a href="log_user.html" class="button">acceder</a>
 
@@ -66,14 +70,7 @@
     </ul>
 
 
-    <div class="chat-whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=1138479551&text=Hola,%20me%20gustaría%20saber%20más%20sobre%20los%20cursos%20de%20lavarropas."
-            target="_blank">
-            <button class="animate__animated animate__headShake animate__repeat-3 boton_wsp"><img class="img_wsp"
-                    src="wsp.png" alt="imagen_wsp"></button>
-        </a>
-    </div>
-
+   
     <div id="carouselExample" class="carousel slide carrusel ">
         <div class="carousel-inner ">
             <div class="carousel-item active ">
@@ -97,38 +94,41 @@
     </div>
     <footer class="footer">
         <hr>
-        <img src="logo_proy.jpeg" alt="" class="logo_footer">
-        <a href="FOOTER_TP_CaC.html"><img src="IMAGENES/logo2.png" alt=""></a>
-        <!--<a href="home.html"><img src="IMAGENES/logo2.png" width="5%" alt="Logo 2"></a> -->
-        <br>
+        <div class="row-cols-1 col-1 m-0 p-0 d-flex text-start  ">
+        <img src="logo_proy.jpeg" alt="" class="logo_footer" > 
+        
+        
+        
         <!--
         <h3>Acerca de Nosotros<h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur aliquam, corporis accusamus, enim esse deserunt beatae ratione deleniti et cupiditate ipsa magni amet nulla quos </p>-->
 
-        <br>
-
-        <h4>Contacto</h4>
-        <p>Telefono:<a href="telefono:+54-123456789"></a> 📞 telefono +54-123456789</p>
-        <p>Mail:<a href="mailto:info@tuempresa.com"></a> 📨 mail:info@tuempresa.com</p>
+       
+        </div>
+        <div class="row m-0 p-0 d-flex text-start   " >
+        <h4 >Contacto</h4>
+        <p class="col p-0 m-0 d-flex text-start  ">Telefono:<a href="1138473551"></a> 📞 telefono +54-123456789</p>
+        <p class="col p-0 m-0 d-flex text-start   " >Mail:<a href="mailto:skinmaster@hotmail.com">📨 skinmaster@hotmail.com</a></p>
         <!--Aqui deberia ir un formulario de contacto-->
         <br>
+        </div>
 
-        <section>
-            <h4>Nuestras Redes Sociales</h4> <!--preguntar como agregar el icono-->
-            <p><a href="https://facebook.com" title="Ir a facebook" target="_blank"><img src="registro_facebook.png"
-                        alt="icono facebook " width="3%">facebook</a> </p>
-            <p><a href="https://instagram.com" title="Ir a Instagram" target="_blank"><img src="instagram.webp"
-                        alt="icono instagram" width="4%">instagram</a></p>
+        <section class="row m-0 p-0 d-flex text-start   "> 
+            <h4 >Nuestras Redes Sociales</h4> <!--preguntar como agregar el icono-->
+            <p  class="col-5 p-0 m-0 d-flex text-start   "><a href="https://facebook.com" title="Ir a facebook" target="_blank"><img src="registro_facebook.png"
+                        alt="icono facebook " width="15%">facebook</a> </p>
+            <p class="col-5 p-0 m-0 d-flex text-start   "><a href="https://instagram.com" title="Ir a Instagram" target="_blank"><img src="instagram.webp"
+                        alt="icono instagram" width="10%">instagram</a></p>
 
             <!--<p><a href="https://facebook.com" title="Ir a facebook" target="_blank"><img src="imagenes/facebook-logo.png" alt="icono facebook " width="3%" ></a> </p>-->
             <!--como cambio el color del link?-->
             <!--<p><a href="https://instagram.com" title="Ir a Instagram" target="_blank"><img src="imagenes/Instagram-logo.jpg" alt="icono instagram" width="4%" ></a></p>-->
         </section>
 
-        <section>
+        <section class="row m-0 p-0 d-flex text-start ">
             <h4>Direcciones:</h4>
-            <p>Juan Perez 195, Bs. As., Argentina</p>
-            <p>Rodriguez Peña 4567, Bs. As., Argentina</p>
+            <p class="col-5 p-1 m-1 d-flex text-start   ">Juan Perez 195, Bs. As., Argentina</p>
+            <p class="col-5 p-1 m-1 d-flex text-start   ">Rodriguez Peña 4567, Bs. As., Argentina</p>
         </section>
 
         <!--<section>
@@ -142,7 +142,7 @@
             </ul>
         </section>-->
         <br>
-        <nav> <!-- esto seria un nav u otra section??????-->
+        <nav > <!-- esto seria un nav u otra section??????-->
             <p class="mapa_sitio">Mapa del sitio:</p>
             <ul>
                 <li><a href="home.html">Home</a></li>
@@ -174,6 +174,7 @@
             </b>
         </p>
 
+       
     </footer>
 
 
@@ -185,7 +186,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
-
+        
+           
+            
 
 </body>
 
