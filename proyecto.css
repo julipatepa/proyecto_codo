@@ -165,6 +165,18 @@ li a{
     margin: 5px auto;
   }
 }
+<<<<<<< HEAD
+
+<!--AGREGO ESTO PARA QUE qUE VAYA UNA IMAGEN DE FONDO EN LA SECCION DE NOSOTROS SOTROS.
+LUEGO DESDE LA COMPU BUSCO LA FOTO DE FONDO. MAJO. -->
+
+section {
+      background-image: url("imagenes/mi-imagen-de-fondo.jpg");
+     
+    }
+      
+=======
+>>>>>>> ad9c853018bc9b26dc0490534332c4b175b57fb1
 * footer {
   background-color: rgb(150, 150, 231);
   color: beige;
